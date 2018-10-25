@@ -1,0 +1,22 @@
+.gradient-text {
+    background: -webkit-linear-gradient(pink, red);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+    font-size: 25px;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+
+label{
+    background: -webkit-linear-gradient(gray, black);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
