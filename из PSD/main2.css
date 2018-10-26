@@ -38,7 +38,6 @@ header {
     margin: 2rem;
     display: flex;
     justify-content: space-between;
-    position: relative;
     z-index: 1;
 }
 
@@ -47,24 +46,23 @@ header {
     color: #fff;
 }
 
-nav {
-    width: 60%;
-}
+
 
 nav ul {
+    margin: 0;
     display: flex;
-    justify-content: space-between;
     list-style: none;
+}
+nav li {
+    margin-left: 50px;
 }
 
 nav a:hover {
     border-bottom: 1px solid white;
-    transition: width 0.3s ease-out;
 }
 
 .get {
-    padding: 10px 20px;
-    margin-left: 180px;
+    padding: 10px 30px;
     border: 1px solid #fff;
     border-radius: 100px;
 }
@@ -72,7 +70,6 @@ nav a:hover {
 .table {
     margin-top: 10%;
     font-weight: bold;
-    position: relative;
     text-align: center;
     color: #fff;
     z-index: 2;
@@ -118,7 +115,84 @@ nav a:hover {
 
 }
 
-@media screen and (max-width: 480px) {
+.select {
+    height: 100vh;
+    min-height: 600px;
+    border-color: #f3f3f3;
+}
+
+.select-header {
+    margin-top: 7rem;
+    text-align: center;
+}
+
+.select-header span {
+    color: #9fa4af;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.select-header span::after {
+    content: ' ';
+    margin-left: 10px;
+    width: 20px;
+    height: 1px;
+    background-color: #6e45e2;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.select-header span::before {
+    content: ' ';
+    margin-right: 10px;
+    width: 20px;
+    height: 1px;
+    background-color: #6e45e2;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.select-header h3 {
+    font-size: 42px;
+    color: rgb(79, 79, 111);
+    -moz-transform: matrix(1.42422241571191, 0, 0, 1.42422241571191, 0, 0);
+    -webkit-transform: matrix(1.42422241571191, 0, 0, 1.42422241571191, 0, 0);
+    -ms-transform: matrix(1.42422241571191, 0, 0, 1.42422241571191, 0, 0);
+
+}
+
+.select-header p {
+    display: inline-block;
+    font-size: 16px;
+    color: rgb(159, 164, 175);
+    width: 25rem;
+}
+
+.price-tags{
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid green;
+}
+.price-tag
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    height: 25rem;
+    width: 20rem;
+    margin: 2rem;
+    border: 1px solid red;
+    
+}
+.price-tag img {
+    width: 8vw;
+}
+
+@media screen and (max-width: 630px) {
 
     main,
     .main_ov,
@@ -160,4 +234,29 @@ nav a:hover {
         border: 1px solid #fff;
         border-radius: 100px;
     }
+}
+@media screen and (max-width: 1142px) {
+   main,
+    .main_ov,
+    nav {
+        width: 100%;
+        height: 100%;
+    }  
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul{ 
+        margin-top: 20px;
+        display: flex;
+        width: 100%;
+    }
+    nav li {
+    margin-left: 10px;
+}
+    .get {
+    padding: 8px 15px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+}
 }
