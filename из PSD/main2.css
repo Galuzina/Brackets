@@ -317,9 +317,11 @@ footer .get {
 }
 
 .footer li {
-    margin-left: 10px;
+    margin-left: 15px;
 }
-
+i {
+    color: #bababa;
+}
 .footer span {
     color: #bababa;
 }
