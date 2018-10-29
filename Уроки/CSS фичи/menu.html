@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="menu.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <a href="#" class="menu-btn"></a>
+            <nav class="menu-list">
+                <a href="#main">Главная</a>
+                <a href="#news">Новости</a>
+                <a href="#contacts">Контакты</a>
+                <a href="#portfolio">Портфолио</a>
+            </nav>
+        </div>
+    </div>
+    <div class="content">
+        <section class="main" id="main">
+            <h2>Главная</h2>
+        </section>
+        <section class="news" id="news">
+            <h2>Новости</h2>
+        </section>
+        <section class="contacts" id="contacts">
+            <h2>Контакты</h2>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <h2>Портфолио</h2>
+        </section>
+    </div>
+    <script>
+        $('.menu-btn').on('click', function(e) {
+            e.preventDefault();
+            $('.menu').toggleClass('menu_active');
+        })
+
+    </script>
+</body>
+
+</html>
