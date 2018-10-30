@@ -11,7 +11,10 @@
 <body>
     <div class="wrapper">
         <div class="menu">
-            <a href="#" class="menu-btn"></a>
+            <div class="section">
+                <a href="#" class="menu-btn"><span></span></a>
+            </div>
+
             <nav class="menu-list">
                 <a href="#main">Главная</a>
                 <a href="#news">Новости</a>
@@ -37,7 +40,9 @@
     <script>
         $('.menu-btn').on('click', function(e) {
             e.preventDefault();
+            $(this).toggleClass('menu-btn_active');
             $('.menu').toggleClass('menu_active');
+            $('.content').toggleClass('content_active');
         })
 
     </script>

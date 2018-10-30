@@ -1,6 +1,8 @@
 body {
     margin: 0;
     font-family: sans-serif;
+    
+    overflow: hidden;
 }
 
 a {
@@ -9,7 +11,9 @@ a {
     font-weight: 900;
     text-transform: uppercase;
 }
-
+.content{
+    transition: 0.5s;
+}
 section {
     height: 100vh;
     display: flex;
@@ -40,6 +44,7 @@ section {
 }
 
 .menu {
+    z-index: 99;
     position: fixed;
     left: 0;
     top: 0;
@@ -52,7 +57,9 @@ section {
     transition: 0.5s;
     transform: translateX(-100%);
 }
-
+.content_active {
+    transform: translateX(30%);
+}
 .menu_active {
     transform: translateX(0%);
 }
@@ -64,11 +71,53 @@ section {
     height: 50%;
 }
 
-.menu-btn {
-    width: 30px;
-    height: 30px;
-    background-color: #333;
+.section {
     position: absolute;
     top: 10px;
     right: -35px;
+}
+
+.menu-btn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+    position: absolute;
+    height: 2px;
+    background-color: #222;
+    width: 16px;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -8px;
+}
+
+.menu-btn span::before,
+.menu-btn span::after {
+    content: '';
+    display: block;
+    transition: 0.3s;
+}
+
+.menu-btn span::before {
+    transform: translateY(-5px);
+}
+.menu-btn span::after {
+    transform: translateY(5px);
+}
+.menu-btn_active span {
+    height: 0;
+}
+.menu-btn_active span:before{
+ transform: rotate(40deg);   
+}
+.menu-btn_active span:after{
+transform: rotate(-40deg);
 }
