@@ -101,6 +101,49 @@ footer {
 
 }
 
+.galary_container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.galary {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 8%;
+
+}
+
+.galary_item {
+    width: 20%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.pict {
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    opacity: 0.55;
+}
+.pict.active {
+    width: 340px;
+    height: 240px;
+}
+
+.pict:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width:1530px) {
+    .galary_item {
+        width: 40%;
+    }
+
+}
+
 @media screen and (max-width:760px) {
     .topnav a:not(:first-child) {
         display: none;
@@ -149,6 +192,18 @@ footer {
     .menu_item {
         width: 45%;
     }
+
+    .galary_item {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .pict {
+        width: 65vw;
+        height: 30vh;
+    }
 }
 
 @media screen and (max-width:470px) {
@@ -156,4 +211,16 @@ footer {
     .menu_item {
         width: 100%;
     }
+
+    .galary_item {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1400px) {
+
+    .w100 {
+        min-width: 100%;
+    }
+
 }
