@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
 
 </head>
 
 <body>
 
     <head>
-       <article id="Home"></article>
+        <article id="Home"></article>
         <div class="logo">
             <a href="#"><img src="logo.png" alt="logo" class="logo_grafick"></a>
         </div>
@@ -26,94 +27,144 @@
         </nav>
     </head>
 
+    <div class="b-popup" id="popup1">
+        <div class="b-popup-content">
+
+            <div class="b-popup-menu">
+
+                <form action="">
+                    <div> <label for="name">Имя</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div>
+                        <label for="phone">Телефон</label>
+                        <input type="phone" name="phone" required>
+                    </div>
+                    <div>
+                        <label for="time">Время записи</label>
+                        <select name="time">
+                            <option>Выберите время</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit">Отправить</button> 
+
+                </form>
+            </div>
+        </div>
+    </div>
+
     <main>
         <img src="web.jpg" alt="" class="w100">
-        
+
         <div class="menu_text">
             <article id="About"></article>
             <p class="text">Первая парикмахерская Birdie открылась весной 2013. Идеальная прическа — простая и удобная в повседневной жизни. Укладка не выдаст в вас завсегдатая салонов красоты. А о том, что от природы ваши волосы другого цвета, мы сохраним в секрете. Помимо процедур по уходу за волосами, в парикмахерской можно так же сделать коррекцию бровей, макияж, маникюр и педикюр.
-Нашим ключевым принципом является здоровье клиента, поэтому в первую очередь мы отказались от процедур и косметики, негативно влияющих на состояние волос и ногтей.</p>
+                Нашим ключевым принципом является здоровье клиента, поэтому в первую очередь мы отказались от процедур и косметики, негативно влияющих на состояние волос и ногтей.</p>
         </div>
-        
+
         <img src="web2.jpg" alt="" class="w100">
-        
+
         <div class="menu_text">
             <p class="text">У нас все просто. Идеальная прическа — простая и удобная
                 в повседневной жизни. Она не требует многочасовых укладок перед зеркалом и будет уместно смотреться в любом контексте будь то свидание или офис со строгим дресс-кодом. Для окрашивания волос мы используем щадящие красители Davines и органические красители Organic Сolour Systems, позволяющие добиться оттенков, приближенных к натуральным</p>
         </div>
 
-       <article id="price"></article>
+        <article id="price"></article>
         <div class="menu_container">
             <div class="menu">
 
                 <div class="menu_item">
                     <h4>Стрижка с укладкой</h4>
-                    <button><b>1800 ₽</b></button>
+                    <a href="javascript:PopUpShow()"><button><b>1800 ₽</b></button></a>
                 </div>
-                
+
                 <div class="menu_item">
                     <h4>Стрижка</h4>
-                    <button><b>1500₽</b></button>
+                    <a href="javascript:PopUpShow()"><button><b>1500 ₽</b></button></a>
                 </div>
 
                 <div class="menu_item">
                     <h4>Детская стрижка</h4>
-                    <button><b>1500₽</b></button>
+                    <a href="javascript:PopUpShow()"><button><b>1500 ₽</b></button></a>
                 </div>
 
                 <div class="menu_item">
                     <h4>Укладка</h4>
-                    <button><b>1000₽</b></button>
+                    <a href="javascript:PopUpShow()"><button><b>1000 ₽</b></button></a>
 
                 </div>
 
                 <div class="menu_item">
                     <h4>Стрижка челки</h4>
-                    <button><b>550₽</b></button>
+                    <a href="javascript:PopUpShow()"><button><b>550 ₽</b></button></a>
                 </div>
 
                 <div class="menu_item">
 
                     <h4>Окрашивание</h4>
-                    <button><b>2500₽</b></button>
+                    <a href="javascript:PopUpShow()"><button><b>2500 ₽</b></button></a>
                 </div>
 
                 <div class="menu_item">
                     <h4>Уход от Olaplex</h4>
-                    <button><b>1500₽</b></button>
+                    <a href="javascript:PopUpShow()"><button><b>1500 ₽</b></button></a>
                 </div>
-                
+
                 <div class="menu_item">
                     <h4>Мужская стрижка</h4>
-                    <button><b>1500₽</b></button>
+                    <a href="javascript:PopUpShow()"><button><b>1500 ₽</b></button></a>
                 </div>
-                
+
                 <div class="menu_item">
                     <h4>Мужская стрижка с укладкой</h4>
-                    <button><b>100₽</b></button>
+                    <a href="javascript:PopUpShow()"><button><b>1000 ₽</b></button></a>
                 </div>
-                
-                  <div class="menu_item">
+
+                <div class="menu_item">
                     <h4>Коррекция бровей</h4>
-                    <button><b>1200₽</b></button>
+                    <a href="javascript:PopUpShow()"><button><b>1200 ₽</b></button></a>
                 </div>
-                
-                 <div class="menu_item">
+
+                <div class="menu_item">
                     <h4>Окрашивание бровей</h4>
-                    <button><b>900₽</b></button>
+                    <a href="javascript:PopUpShow()"><button><b>900 ₽</b></button></a>
                 </div>
-                
-                 <div class="menu_item">
+
+                <div class="menu_item">
                     <h4>Макияж</h4>
-                    <button><b>2200₽</b></button>
+                    <a href="javascript:PopUpShow()"><button><b>2200 ₽</b></button></a>
                 </div>
-                
+
             </div>
         </div>
     </main>
 
 
     <script src="sc.js"></script>
+    <script>
+        $(document).ready(function() {
+            //Скрыть PopUp при загрузке страницы    
+            PopUpHide();
+        });
+        //Функция отображения PopUp
+        function PopUpShow() {
+            $("#popup1").show();
+        }
+        //Функция скрытия PopUp
+        function PopUpHide() {
+            $("#popup1").hide();
+        }
+
+    </script>
 </body>
 
 </html>
