@@ -9,6 +9,82 @@ body {
     font-family: "Maven Pro", sans-serif;
 }
 
+.popup {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.p-content {
+    z-index:5;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    width: 250px;
+    height: 450px;
+    padding-top: 10px;
+    background-image: -moz-linear-gradient(150deg, rgb(136, 211, 206) 0%, rgb(110, 69, 226) 100%);
+    background-image: -webkit-linear-gradient(150deg, rgb(136, 211, 206) 0%, rgb(110, 69, 226) 100%);
+    background-image: -ms-linear-gradient(150deg, rgb(136, 211, 206) 0%, rgb(110, 69, 226) 100%);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+    border-radius: 0 20px 20px 0;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+form div {
+    margin-bottom: 20px;
+}
+
+form button {
+    padding: 10px 0;
+    margin-left: 35px;
+    width: 120px;
+    background: #fff;
+    color: #6e45e2;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 35px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+form button:hover {
+    background-color: #6e45e2;
+    color: #fff;
+}
+
+select {
+    margin-top: 5px;
+    width: 180px;
+    cursor: pointer;
+    padding: 5px 5px;
+    background: #fff;
+    color: #7b7b7b;
+}
+input[type="text"], input[type="phone"],input[type="date"], input[type="time"] {
+  margin-top: 5px;
+    display: flex;
+  width: 180px;
+  background: #fff;
+}
+
+
 main {
     display: flex;
     flex-direction: column;
@@ -22,6 +98,7 @@ main {
 main2 {
     display: flex;
     flex-direction: column;
+    z-index: -1;
     position: relative;
     height: 100vh;
     min-height: 600px;
@@ -33,6 +110,7 @@ main3 {
     display: flex;
     flex-direction: column;
     position: relative;
+    z-index: -1;
     height: 100vh;
     min-height: 600px;
     background: url(6.webp) no-repeat center;
@@ -213,16 +291,6 @@ nav a:hover {
 .table h1 {
     font-size: 60.384px;
 }
-
-.arrow {
-    margin-top: 15%;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
 .select {
     height: 30vh;
     min-height: 500px;

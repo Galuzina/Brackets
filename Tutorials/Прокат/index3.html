@@ -25,6 +25,48 @@
                 </ul>
             </nav>
         </header>
+
+        <div class="popup" id="popup1">
+            <div class="p-content">
+                <form action="">
+
+                    <div> <label for="name">Имя</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div>
+                        <label for="phone">Телефон</label>
+                        <input type="phone" name="phone" required>
+                    </div>
+                    <div>
+                        <label for="time">Время: </label>
+                        <input type="time" name="time" required>
+                    </div>
+                    <div>
+                        <label for="date">Дата: </label>
+                        <input type="date" name="date" required>
+                    </div>
+
+
+                    <div>
+                        <label for="point">Выберите пункт:</label>
+                        <select name="point">
+                            <option>Пункты выдачи</option>
+                            <option value="1st">Раевского 19</option>
+                            <option value="2st">Горького 22</option>
+                            <option value="3st">Воровского 15</option>
+                            <option value="4st">Алексеевская 10</option>
+                            <option value="5st">Пискунова 5</option>
+                            <option value="6st">Пр-кт Ленина 55</option>
+                            <option value="7st">Прыгунова 10</option>
+                        </select>
+                    </div>
+                    <button type="submit">Отправить</button>
+                </form>
+
+            </div>
+
+        </div>
+
         <div class="wrapper">
             <div class="menu-block">
                 <nav class="menu-nav">
@@ -54,145 +96,161 @@
         </div>
     </div>
 
-        <main2>
-            <div class="main_ov"></div>
-        </main2>
+    <main2>
+        <div class="main_ov"></div>
+    </main2>
 
-        <a id="pay"></a>
-        <div class="select">
-            <div class="select-header"><span>Оплата</span>
-                <h3> Стоимость проката расчитвается за час времени, активируйте ссылку проката, как только придете в пункт и получите свой велосипед. С этого момента начиает идти начало времени проката. По завершению проката, поставьте велосипед в удобный пункт, перейдите по ссылке и заверишите прокат. После этого оплатите указанную стоимость. </h3>
-            </div>
+    <a id="pay"></a>
+    <div class="select">
+        <div class="select-header"><span>Оплата</span>
+            <h3> Стоимость проката расчитвается за час времени, активируйте ссылку проката, как только придете в пункт и получите свой велосипед. С этого момента начиает идти начало времени проката. По завершению проката, поставьте велосипед в удобный пункт, перейдите по ссылке и заверишите прокат. После этого оплатите указанную стоимость. </h3>
+        </div>
+    </div>
+
+    <main3>
+        <div class="main_ov"></div>
+    </main3>
+
+    <a id="take"></a>
+    <div class="select2">
+        <div class="select-header"><span>Прокат</span>
+            <h3> Любой их представленных моделей вы можете забрать в удобном для вас пункте выдачи </h3>
+        </div>
+    </div>
+    <div class="price-tags">
+
+        <div class="price-tag">
+            <img src="1.jpg" alt="">
+            <span><b>FORMAT 1414 в G-Velo</b></span>
+            <h5><sup>₽</sup>100/<sub>час</sub></h5>
+            <p>Премиальный бренд, качественные комплектущие, легкая алюминиевая рама с двойным баттингом, оборудование Shimano ALTUS 3*8ск, мощные дисковые тормоза Tektro Novela</p>
+            <a href="javascript:PopUpShow()"><button><b>Выбрать</b></button></a>
         </div>
 
-            <main3>
-                <div class="main_ov"></div>
-            </main3>
-
-            <a id="take"></a>
-             <div class="select2">
-            <div class="select-header"><span>Прокат</span>
-                <h3> Любой их представленных моделей вы можете забрать в удобном для вас пункте выдачи </h3>
-            </div>
-        </div>
-            <div class="price-tags">
-               
-                <div class="price-tag">
-                    <img src="1.jpg" alt="">
-                    <span><b>FORMAT 1414 в G-Velo</b></span>
-                    <h5><sup>₽</sup>100/<sub>час</sub></h5>
-                    <p>Премиальный бренд, качественные комплектущие, легкая алюминиевая рама с двойным баттингом, оборудование Shimano ALTUS 3*8ск, мощные дисковые тормоза Tektro Novela</p>
-                    <button><b>Выбрать</b></button>
-                </div>
-                
-                <div class="price-tag">
-                    <img src="3.png" alt="">
-                    <span><b> "ТАНДЕМ" в G-Velo:</b></span>
-                    <h5><sup>₽</sup>200/<sub>час</sub></h5>
-                    <p>Легкая и крепкая алюминиевая рама, оборудование Shimano ACERA/ALIVIO, спортивная трансмиссия 24 скорости, качественная и мощная вилка SR SUNTOUR XCM с гидр. блок</p>
-                    <button><b>Выбрать</b></button>
-                </div>
-                
-                <div class="price-tag">
-                    <img src="2.jpg" alt="">
-                    <span><b>FORWARD YUKON 1.0 в G-Velo</b></span>
-                    <h5><sup>₽</sup>100/<sub>час</sub></h5>
-                    <p>Легкая алюминиевая рама, оборудование Shimano ALTUS 3*8ск, надежные ободные тормоза, четкая работа 24 скоростей, мощная вилка SR SUNTOUR XCM</p>
-                    <button><b>Выбрать</b></button>
-                </div>
-                
-                <div class="price-tag">
-                    <img src="4.jpg" alt="">
-                    <span><b>FORWARD BARCELONA AIR </b></span>
-                    <h5><sup>₽</sup>150/<sub>час</sub></h5>
-                    <p>Премиальный бренд, качественные комплектущие, легкая алюминиевая рама с двойным баттингом, оборудование Shimano ALTUS 3*8ск, мощные дисковые тормоза Tektro Novela</p>
-                    <button><b>Выбрать</b></button>
-                </div>
-                
-                <div class="price-tag">
-                    <img src="5.jpg" alt="">
-                    <span><b>FORWARD SEVILLA 26 2.0 2020</b></span>
-                    <h5><sup>₽</sup>100/<sub>час</sub></h5>
-                    <p>Легкая и крепкая алюминиевая рама, оборудование Shimano ACERA/ALIVIO, спортивная трансмиссия 24 скорости, качественная и мощная вилка SR SUNTOUR XCM с гидр. блок</p>
-                    <button><b>Выбрать</b></button>
-                </div>
-                
-                <div class="price-tag">
-                    <img src="6.jpg" alt="">
-                    <span><b>FORWARD ROCKFORD 28 2020</b></span>
-                    <h5><sup>₽</sup>150/<sub>час</sub></h5>
-                    <p>Премиальный бренд, качественные комплектущие, легкая алюминиевая рама с двойным баттингом, оборудование Shimano ALTUS 3*8ск</p>
-                    <button><b>Выбрать</b></button>
-                </div>
-                
-                <div class="price-tag">
-                    <img src="7.jpg" alt="">
-                    <span><b>FORWARD FLARE 27,5 2.0 DISC 2020</b></span>
-                    <h5><sup>₽</sup>100/<sub>час</sub></h5>
-                    <p>Премиальный бренд, качественные комплектущие, легкая алюминиевая рама с двойным баттингом, оборудование Shimano ALTUS 3*8ск, мощные дисковые тормоза Tektro Novela</p>
-                    <button><b>Выбрать</b></button>
-                </div>
-                
-                <div class="price-tag">
-                    <img src="8.jpg" alt="">
-                    <span><b>FORWARD RAPTOR 27,5 2.0 DISC 2020</b></span>
-                    <h5><sup>₽</sup>150/<sub>час</sub></h5>
-                    <p>Легкая и крепкая алюминиевая рама, оборудование Shimano ACERA/ALIVIO, спортивная трансмиссия 24 скорости, качественная и мощная вилка SR SUNTOUR XCM с гидр. блок</p>
-                    <button><b>Выбрать</b></button>
-                </div>
-                
-                <div class="price-tag">
-                    <img src="9.jpg" alt="">
-                    <span><b>FORWARD IRIS 26 2.0 DISC 2020</b></span>
-                    <h5><sup>₽</sup>120/<sub>час</sub></h5>
-                    <p>Премиальный бренд, качественные комплектущие, легкая алюминиевая рама с двойным баттингом, оборудование Shimano ALTUS 3*8ск, мощные дисковые тормоза Tektro Novela</p>
-                    <button><b>Выбрать</b></button>
-                </div>
-                
-                <div class="price-tag">
-                    <img src="10.jpg" alt="">
-                    <span><b>FORMAT 1414 в G-Velo</b></span>
-                    <h5><sup>₽</sup>100/<sub>час</sub></h5>
-                    <p>Премиальный бренд, качественные комплектущие, легкая алюминиевая рама с двойным баттингом, оборудование Shimano ALTUS 3*8ск, мощные дисковые тормоза Tektro Novela</p>
-                    <button><b>Выбрать</b></button>
-                </div>
-                
-                <div class="price-tag">
-                    <img src="1.jpg" alt="">
-                    <span><b>FORMAT 1414 в G-Velo</b></span>
-                    <h5><sup>₽</sup>100/<sub>час</sub></h5>
-                    <p>Легкая и крепкая алюминиевая рама, оборудование Shimano ACERA/ALIVIO, спортивная трансмиссия 24 скорости, качественная и мощная вилка SR SUNTOUR XCM с гидр. блок</p>
-                    <button><b>Выбрать</b></button>
-                </div>
-                
-                <div class="price-tag">
-                    <img src="11.jpg" alt="">
-                    <span><b>FORMAT 1414 в G-Velo</b></span>
-                    <h5><sup>₽</sup>120/<sub>час</sub></h5>
-                    <p>Премиальный бренд, качественные комплектущие, легкая алюминиевая рама с двойным баттингом, оборудование Shimano ALTUS 3*8ск, мощные дисковые тормоза Tektro Novela</p>
-                    <button><b>Выбрать</b></button>
-                </div>
-                
-                <div class="price-tag">
-                    <img src="12.jpg" alt="">
-                    <span><b>FORMAT 2211 700C 2020</b></span>
-                    <h5><sup>₽</sup>150/<sub>час</sub></h5>
-                    <p>Премиальный бренд, качественные комплектущие, легкая алюминиевая рама с двойным баттингом, оборудование Shimano ALTUS 3*8ск, мощные дисковые тормоза Tektro Novela</p>
-                    <button><b>Выбрать</b></button>
-                </div>
-
-            </div>
+        <div class="price-tag">
+            <img src="3.png" alt="">
+            <span><b> "ТАНДЕМ" в G-Velo:</b></span>
+            <h5><sup>₽</sup>200/<sub>час</sub></h5>
+            <p>Легкая и крепкая алюминиевая рама, оборудование Shimano ACERA/ALIVIO, спортивная трансмиссия 24 скорости, качественная и мощная вилка SR SUNTOUR XCM с гидр. блок</p>
+           <a href="javascript:PopUpShow()"><button><b>Выбрать</b></button></a>
         </div>
 
+        <div class="price-tag">
+            <img src="2.jpg" alt="">
+            <span><b>FORWARD YUKON 1.0 в G-Velo</b></span>
+            <h5><sup>₽</sup>100/<sub>час</sub></h5>
+            <p>Легкая алюминиевая рама, оборудование Shimano ALTUS 3*8ск, надежные ободные тормоза, четкая работа 24 скоростей, мощная вилка SR SUNTOUR XCM</p>
+            <a href="javascript:PopUpShow()"><button><b>Выбрать</b></button></a>
+        </div>
+
+        <div class="price-tag">
+            <img src="4.jpg" alt="">
+            <span><b>FORWARD BARCELONA AIR </b></span>
+            <h5><sup>₽</sup>150/<sub>час</sub></h5>
+            <p>Премиальный бренд, качественные комплектущие, легкая алюминиевая рама с двойным баттингом, оборудование Shimano ALTUS 3*8ск, мощные дисковые тормоза Tektro Novela</p>
+            <a href="javascript:PopUpShow()"><button><b>Выбрать</b></button></a>
+        </div>
+
+        <div class="price-tag">
+            <img src="5.jpg" alt="">
+            <span><b>FORWARD SEVILLA 26 2.0 2020</b></span>
+            <h5><sup>₽</sup>100/<sub>час</sub></h5>
+            <p>Легкая и крепкая алюминиевая рама, оборудование Shimano ACERA/ALIVIO, спортивная трансмиссия 24 скорости, качественная и мощная вилка SR SUNTOUR XCM с гидр. блок</p>
+           <a href="javascript:PopUpShow()"><button><b>Выбрать</b></button></a>
+        </div>
+
+        <div class="price-tag">
+            <img src="6.jpg" alt="">
+            <span><b>FORWARD ROCKFORD 28 2020</b></span>
+            <h5><sup>₽</sup>150/<sub>час</sub></h5>
+            <p>Премиальный бренд, качественные комплектущие, легкая алюминиевая рама с двойным баттингом, оборудование Shimano ALTUS 3*8ск</p>
+            <a href="javascript:PopUpShow()"><button><b>Выбрать</b></button></a>
+        </div>
+
+        <div class="price-tag">
+            <img src="7.jpg" alt="">
+            <span><b>FORWARD FLARE 27,5 2.0 DISC 2020</b></span>
+            <h5><sup>₽</sup>100/<sub>час</sub></h5>
+            <p>Премиальный бренд, качественные комплектущие, легкая алюминиевая рама с двойным баттингом, оборудование Shimano ALTUS 3*8ск, мощные дисковые тормоза Tektro Novela</p>
+            <a href="javascript:PopUpShow()"><button><b>Выбрать</b></button></a>
+        </div>
+
+        <div class="price-tag">
+            <img src="8.jpg" alt="">
+            <span><b>FORWARD RAPTOR 27,5 2.0 DISC 2020</b></span>
+            <h5><sup>₽</sup>150/<sub>час</sub></h5>
+            <p>Легкая и крепкая алюминиевая рама, оборудование Shimano ACERA/ALIVIO, спортивная трансмиссия 24 скорости, качественная и мощная вилка SR SUNTOUR XCM с гидр. блок</p>
+            <a href="javascript:PopUpShow()"><button><b>Выбрать</b></button></a>
+        </div>
+
+        <div class="price-tag">
+            <img src="9.jpg" alt="">
+            <span><b>FORWARD IRIS 26 2.0 DISC 2020</b></span>
+            <h5><sup>₽</sup>120/<sub>час</sub></h5>
+            <p>Премиальный бренд, качественные комплектущие, легкая алюминиевая рама с двойным баттингом, оборудование Shimano ALTUS 3*8ск, мощные дисковые тормоза Tektro Novela</p>
+            <a href="javascript:PopUpShow()"><button><b>Выбрать</b></button></a>
+        </div>
+
+        <div class="price-tag">
+            <img src="10.jpg" alt="">
+            <span><b>FORMAT 1414 в G-Velo</b></span>
+            <h5><sup>₽</sup>100/<sub>час</sub></h5>
+            <p>Премиальный бренд, качественные комплектущие, легкая алюминиевая рама с двойным баттингом, оборудование Shimano ALTUS 3*8ск, мощные дисковые тормоза Tektro Novela</p>
+            <a href="javascript:PopUpShow()"><button><b>Выбрать</b></button></a>
+        </div>
+
+        <div class="price-tag">
+            <img src="1.jpg" alt="">
+            <span><b>FORMAT 1414 в G-Velo</b></span>
+            <h5><sup>₽</sup>100/<sub>час</sub></h5>
+            <p>Легкая и крепкая алюминиевая рама, оборудование Shimano ACERA/ALIVIO, спортивная трансмиссия 24 скорости, качественная и мощная вилка SR SUNTOUR XCM с гидр. блок</p>
+            <a href="javascript:PopUpShow()"><button><b>Выбрать</b></button></a>
+        </div>
+
+        <div class="price-tag">
+            <img src="11.jpg" alt="">
+            <span><b>FORMAT 1414 в G-Velo</b></span>
+            <h5><sup>₽</sup>120/<sub>час</sub></h5>
+            <p>Премиальный бренд, качественные комплектущие, легкая алюминиевая рама с двойным баттингом, оборудование Shimano ALTUS 3*8ск, мощные дисковые тормоза Tektro Novela</p>
+            <a href="javascript:PopUpShow()"><button><b>Выбрать</b></button></a>
+        </div>
+
+        <div class="price-tag">
+            <img src="12.jpg" alt="">
+            <span><b>FORMAT 2211 700C 2020</b></span>
+            <h5><sup>₽</sup>150/<sub>час</sub></h5>
+            <p>Премиальный бренд, качественные комплектущие, легкая алюминиевая рама с двойным баттингом, оборудование Shimano ALTUS 3*8ск, мощные дисковые тормоза Tektro Novela</p>
+            <a href="javascript:PopUpShow()"><button><b>Выбрать</b></button></a>
+        </div>
+
+    </div>
+
+
+    <script>
+        $('.menu-btn').on('click', function(e) {
+            e.preventDefault();
+            $(this).toggleClass('menu-btn_active');
+            $('.menu').toggleClass('menu_active');
+            $('.menu-nav').toggleClass('menu-nav_active');;
+        })
+
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            //Скрыть PopUp при загрузке страницы    
+            PopUpHide();
+        });
+        //Функция отображения PopUp
+        function PopUpShow() {
+            $("#popup1").show();
+        }
+        //Функция скрытия PopUp
+        function PopUpHide() {
+            $("#popup1").hide();
+        }
+
+    </script>
 </body>
-<script>
-    $('.menu-btn').on('click', function(e) {
-        e.preventDefault();
-        $(this).toggleClass('menu-btn_active');
-        $('.menu').toggleClass('menu_active');
-        $('.menu-nav').toggleClass('menu-nav_active');;
-    })
-
-</script>
 
 </html>
