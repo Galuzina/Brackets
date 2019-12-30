@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
-    <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.0.2.min.js">
+    </script>
+
 
 </head>
 
@@ -28,37 +30,35 @@
     </head>
 
     <div class="b-popup" id="popup1">
+
         <div class="b-popup-content">
 
-            <div class="b-popup-menu">
+            <form>
+                <div> <label for="name">Имя</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div>
+                    <label for="phone">Телефон</label>
+                    <input type="phone" name="phone" required>
+                </div>
+                <div>
+                    <label for="time">Время записи</label>
+                    <select name="time">
+                        <option>Выберите время</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="12:00">12:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                        <option value="17:00">17:00</option>
+                    </select>
+                </div>
 
-                <form action="">
-                    <div> <label for="name">Имя</label>
-                        <input type="text" name="name" required>
-                    </div>
-                    <div>
-                        <label for="phone">Телефон</label>
-                        <input type="phone" name="phone" required>
-                    </div>
-                    <div>
-                        <label for="time">Время записи</label>
-                        <select name="time">
-                            <option>Выберите время</option>
-                            <option value="10:00">10:00</option>
-                            <option value="11:00">11:00</option>
-                            <option value="12:00">12:00</option>
-                            <option value="13:00">13:00</option>
-                            <option value="14:00">14:00</option>
-                            <option value="15:00">15:00</option>
-                            <option value="16:00">16:00</option>
-                            <option value="17:00">17:00</option>
-                        </select>
-                    </div>
-                    
-                    <button type="submit">Отправить</button> 
+                <button onclick="delete()" type="submit">Отправить</button>
 
-                </form>
-            </div>
+            </form>
         </div>
     </div>
 
@@ -165,6 +165,17 @@
         }
 
     </script>
+
+    <script>
+        function Delete() {
+            var n = getElementById("time");
+            n.remove(n.selectedIndex);
+        }
+
+    </script>
+
+
+
 </body>
 
 </html>
